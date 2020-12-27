@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [runtest]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Adhoc(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="URI" value="https://www.homedepot.com/auth/view/createaccount/proxtra"/>
+    <classes>
+      <class name="scriptRunner.HomeTest">
+        <methods>
+          <include name="afterClass"/>
+          <include name="f"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- scriptRunner.HomeTest -->
+    </classes>
+  </test> <!-- Adhoc(failed) -->
+</suite> <!-- Failed suite [runtest] -->
