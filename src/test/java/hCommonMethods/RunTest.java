@@ -22,7 +22,7 @@ public class RunTest {
 		if (browser.equalsIgnoreCase("Chrome")) {
 			String userDirectory = System.getProperty("user.dir");
 			System.out.println(userDirectory);
-			System.setProperty("webdriver.chrome.driver", userDirectory + "/chromedriver 2");
+			System.setProperty("webdriver.chrome.driver", userDirectory + "/chromedriver");
 			// System.setProperty("webdriver.chrome.driver",
 			// "{{/Users/mdhasan/eclipse-workspace/selnum}}/chromedriver-1");
 			driver = new ChromeDriver();
@@ -34,7 +34,7 @@ public class RunTest {
 		} else if (browser.equalsIgnoreCase("Firefox")) {
 			String userDirectory = System.getProperty("user.dir");
 			// System.out.println(userDirectory);
-			System.setProperty("webdriver.gecko.driver", userDirectory + "/geckodriver 6");
+			System.setProperty("webdriver.gecko.driver", userDirectory + "/geckodriver");
 			driver = new FirefoxDriver();
 			driver.manage().window().maximize();
 			driver.get(URI);

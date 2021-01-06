@@ -11,7 +11,7 @@ public class Home_Welcome {
 	public WebDriver driver;
 	
 	@FindBy(xpath = "(//*[text()='My Account'])[1]") WebElement myAcct;
-	@FindBy(xpath = "//span[normalize-space()='Register']") WebElement regNewAcct;
+	@FindBy(xpath = "//*[@id=\"SPSORegister\"]/a/span") WebElement regNewAcct;
 
 	
 	public Home_Welcome(WebDriver driver) {

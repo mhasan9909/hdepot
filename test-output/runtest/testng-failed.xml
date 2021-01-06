@@ -3,7 +3,7 @@
 <suite parallel="tests" name="Failed suite [runtest]" guice-stage="DEVELOPMENT">
   <test thread-count="5" parallel="tests" name="Adhoc(failed)">
     <parameter name="browser" value="Chrome"/>
-    <parameter name="URI" value="https://www.homedepot.com/auth/view/createaccount/proxtra"/>
+    <parameter name="URI" value="https://www.homedepot.com/"/>
     <classes>
       <class name="scriptRunner.HomeTest">
         <methods>
